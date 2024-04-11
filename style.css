@@ -1,0 +1,1546 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Roboto Condensed", sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --dark: #164E45;
+    --soft: #2C9181;
+    --light: #ffff;
+    --accent: #E0FF47;
+    --new-accent: #FFE400;
+    --text: #000000;
+    --danger: #FF0000;
+    --verified: #CC7900;
+    --light-bgc: #EEEEEE;
+    --border: #C1C4CA;
+    --hover: #E6FEFF;
+    --blu: #236DAF;
+    --roboto-condensed: "Roboto Condensed", sans-serif;
+}
+img.hamBur{
+display: none;
+}
+.mobimg img{
+    display: none;
+}
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark);
+    padding: 10px;
+    position: fixed;
+    z-index: 999;
+}
+
+div.container {
+    max-width: 1000px;
+    width: 100%;
+}
+
+header div.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div.container div.logo img {
+    width: 180px;
+}
+
+header div.container div.nav a {
+    color: var(--light);
+    padding: 8px 24px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+header div.container div.nav button {
+    background-color: var(--soft);
+    cursor: pointer;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    color: var(--light);
+}
+
+header div.container div.nav a:hover {
+    background-color: var(--soft);
+}
+
+header div.container div.nav a:nth-child(4):hover {
+    background-color: transparent;
+}
+
+/* banner */
+div.banner {
+    background: radial-gradient(circle, #2f9080 0, #227265 50%, #144e44 100%);
+    padding: 7rem 0rem 3rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.banner div.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.banner div.container div.left {
+    width: 40%;
+}
+
+div.banner div.container div.right {
+    width: 60%;
+}
+
+div.banner div.container div.left img {
+    width: 412px;
+}
+
+div.banner div.container div.right img {
+    width: 580px;
+}
+
+div.banner div.container div.right h2 {
+    font-size: 3.4rem;
+    color: var(--light);
+}
+
+div.banner div.container div.right h2 span {
+    color: var(--accent);
+}
+
+div.banner div.container div.right p.description {
+    font-size: 1.5rem;
+    color: var(--light);
+}
+
+div.banner div.container div.right p.description span {
+    color: var(--accent);
+}
+
+div.banner div.container div.right p {
+    font-size: 1rem;
+    color: var(--light);
+    line-height: 1.1;
+}
+
+/* scientific */
+div.scientific {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div.scientific div.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 1.5rem 0;
+}
+
+div.scientific div.container div.left {
+    width: 66.66%;
+    padding: 0.75rem;
+}
+
+div.scientific div.container div.right {
+    width: 33.33%;
+    background: url(images/b1.jpg);
+    background-size: cover;
+    border-radius: 8px;
+    margin-left: 1.5rem;
+}
+
+div.scientific div.container div.left p.subHeading {
+    font-size: 2rem;
+    color: var(--soft);
+    font-weight: 700;
+    padding: 0.5rem 0rem;
+}
+
+div.scientific div.container div.left h3 {
+    font-size: 3rem;
+    color: var(--text);
+}
+
+div.scientific div.container div.left h3 span.under {
+    text-decoration-color: var(--new-accent) !important;
+    text-decoration: underline;
+    text-decoration-thickness: 2.2px;
+}
+
+div.scientific div.container div.left h3 span.italic {
+    font-style: italic;
+}
+
+div.scientific div.container div.left p {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+div.scientific div.container div.left p.notification {
+    background-color: #F5F5F5;
+    border: 2px solid var(--dark);
+    border-radius: 4px;
+    padding: 1.25rem 2.5rem 1.25rem 1.5rem;
+}
+
+div.scientific div.container:last-child() {
+    padding: 0px 0px;
+}
+
+div.scientific div.container p.ref {
+    color: #7a7a7a;
+    padding: 1.5rem 0.75rem;
+}
+
+/* creater */
+div.created {
+    background: radial-gradient(circle, #2f9080 0, #227265 50%, #144e44 100%);
+    border-top: 4px solid var(--dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.created div.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.5rem 0px 3rem 0px;
+}
+
+div.created div.container h3 {
+    font-size: 1.8rem;
+    color: var(--accent);
+}
+
+div.created div.container img {
+    width: 450px;
+}
+
+div.created div.container h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--light)
+}
+
+div.created div.container h2 span {
+    color: var(--accent)
+}
+
+div.created div.container p {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: var(--light);
+}
+
+div.created div.container div.innerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.created div.container div.innerContainer div.left {
+    padding: 0.75rem;
+}
+
+div.created div.container div.innerContainer div.right {
+    padding: 0.75rem;
+}
+
+div.created div.container div.innerContainer div.left img {
+    width: 480px;
+}
+
+div.created div.container div.innerContainer div.right span {
+    color: var(--accent);
+}
+
+div.capsule {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+div.capsule div.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div.capsule div.container h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+div.capsule div.container p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+div.capsule div.container div.threeContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+div.capsule div.container div.towContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 66.66%;
+}
+
+div.capsule .imgBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 0.75rem;
+}
+
+div.capsule .imgBox img {
+    width: 190px;
+    height: 190px;
+}
+
+div.capsule .imgBox h2 {
+    font-size: 29px !important;
+    font-weight: 700;
+    margin-bottom: 0px !important;
+}
+
+div.capsule .imgBox p {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: #7a7a7a;
+    font-style: italic;
+    ;
+}
+
+div.capsule .imgBox div.lists {
+    width: 100%;
+}
+
+div.capsule .imgBox div.lists img {
+    width: 15px;
+    height: 15px;
+    margin-right: 0.25rem;
+}
+
+div.capsule .imgBox div.lists span {
+    text-decoration-color: var(--new-accent) !important;
+    text-decoration: underline;
+    text-decoration-thickness: 2.2px;
+    text-underline-offset: 3px;
+}
+
+/* features */
+div.features {
+    background: #eee;
+    border-top: 4px solid #e8e8e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.features div.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.5rem 0rem;
+}
+
+div.features div.container img {
+    width: 280px;
+    margin-bottom: 0.75rem;
+}
+
+div.features div.container div.row {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+div.features div.container div.row img {
+    width: 69px;
+    margin-right: 0.5rem;
+}
+
+div.features div.container div.row div.feature {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.5rem;
+    width: 33.33%;
+}
+
+/* bonus */
+div.bonus {
+    background: radial-gradient(circle, #2f9080 0, #227265 50%, #144e44 100%);
+    border-top: 4px solid var(--dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0rem;
+}
+
+div.bonus div.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div.bonus div.container h2 {
+    font-size: 3rem;
+    color: var(--light);
+    margin-bottom: 1.5rem;
+}
+
+div.bonus div.container h2 span {
+    color: var(--accent);
+}
+
+div.bonus div.container h2 span.under {
+    text-decoration-color: var(--new-accent) !important;
+    text-decoration: underline;
+    text-decoration-thickness: 2.2px;
+}
+
+div.bonus div.container div.twoContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+div.bonus div.container div.twoContainer img {
+    width: 480px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border: 10px solid var(--dark);
+}
+
+div.bonus div.container div.twoContainer .imgBox h3 {
+    padding: 0.75rem;
+    color: var(--light);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+div.bonus div.container div.twoContainer .imgBox div.bottom {
+    background-color: var(--dark);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin-top: -10px;
+    width: 480px;
+    font-size: 1.5rem !important;
+    text-align: center;
+}
+
+div.bonus div.container div.twoContainer .imgBox div.bottom span {
+    color: #40d4bd;
+}
+
+div.bonus div.container div.twoContainer div.imgDes h3 {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    text-align: center;
+    color: var(--light);
+}
+
+div.bonus div.container div.twoContainer div.imgDes h3 span {
+    text-decoration: line-through var(--danger);
+}
+
+div.bonus div.container div.twoContainer div.imgDes p {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--light);
+    width: 480px;
+}
+
+/* shipping */
+div.shipping {
+    background: #11433a;
+    border-top: 4px solid var(--dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0rem;
+}
+
+div.shipping div.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.shipping div.container img {
+    width: 180px;
+}
+
+div.shipping div.container div.desc {
+    width: 100%;
+    padding: 1rem;
+}
+
+div.shipping div.container div.desc h2 {
+    font-size: 2.4rem;
+    color: var(--light);
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+div.shipping div.container div.desc h2 span {
+    text-decoration-color: var(--new-accent) !important;
+    text-decoration: underline;
+    text-decoration-thickness: 2.2px;
+}
+
+div.shipping div.container div.desc p {
+    font-size: 1.6rem;
+    color: var(--light);
+}
+
+div.shipping div.container div.desc p span {
+    color: #40d4bd;
+}
+
+/* users */
+div.users {
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.users div.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div.users div.container h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+div.users div.container h2 span {
+    text-decoration-color: var(--soft) !important;
+    text-decoration: underline;
+    text-decoration-thickness: 2.2px;
+}
+
+div.users div.container div.images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+div.users div.container div.images img.img1 {
+    border-bottom: 22px solid #fff;
+    border-top: 6px solid #fff;
+    border-right: 6px solid #fff;
+    border-left: 6px solid #fff;
+    box-shadow: -1px 6px 15px -3px rgba(0, 0, 0, .48);
+    max-width: 90px !important;
+    width: 9vw !important;
+    transform: rotate(-2deg);
+}
+
+div.users div.container div.images img.img2 {
+    border-bottom: 22px solid #fff;
+    border-top: 6px solid #fff;
+    border-right: 6px solid #fff;
+    border-left: 6px solid #fff;
+    box-shadow: -1px 6px 15px -3px rgba(0, 0, 0, .48);
+    transform: rotate(-2deg);
+    max-width: 120px !important;
+    width: 12vw !important;
+}
+
+div.users div.container div.images img.img3 {
+    border-bottom: 22px solid #fff;
+    border-top: 6px solid #fff;
+    border-right: 6px solid #fff;
+    border-left: 6px solid #fff;
+    box-shadow: -1px 6px 15px -3px rgba(0, 0, 0, .48);
+    transform: rotate(-3deg);
+    max-width: 150px !important;
+    width: 15vw !important;
+}
+
+div.users div.container div.images img.img4 {
+    border-bottom: 22px solid #fff;
+    border-top: 6px solid #fff;
+    border-right: 6px solid #fff;
+    border-left: 6px solid #fff;
+    box-shadow: -1px 6px 15px -3px rgba(0, 0, 0, .48);
+    transform: rotate(4deg);
+    max-width: 150px !important;
+    width: 15vw !important;
+}
+
+div.users div.container div.images img.img5 {
+    border-bottom: 22px solid #fff;
+    border-top: 6px solid #fff;
+    border-right: 6px solid #fff;
+    border-left: 6px solid #fff;
+    box-shadow: -1px 6px 15px -3px rgba(0, 0, 0, .48);
+    transform: rotate(2deg);
+    max-width: 150px !important;
+    width: 15vw !important;
+}
+
+div.users div.container div.images img.img6 {
+    border-bottom: 22px solid #fff;
+    border-top: 6px solid #fff;
+    border-right: 6px solid #fff;
+    border-left: 6px solid #fff;
+    box-shadow: -1px 6px 15px -3px rgba(0, 0, 0, .48);
+    transform: rotate(-2deg);
+    max-width: 120px !important;
+    width: 12vw !important;
+}
+
+div.users div.container div.images img.img7 {
+    border-bottom: 22px solid #fff;
+    border-top: 6px solid #fff;
+    border-right: 6px solid #fff;
+    border-left: 6px solid #fff;
+    box-shadow: -1px 6px 15px -3px rgba(0, 0, 0, .48);
+    transform: rotate(-2deg);
+    max-width: 90px !important;
+    width: 9vw !important;
+}
+
+/* reviews */
+div.reviews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0rem;
+}
+
+div.reviews div.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div.reviews div.container div.review {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 1.5rem;
+}
+
+div.reviews div.container div.review div.img {
+    width: 8.33333%;
+    padding: 0.75rem 0.75rem 0.75rem 0rem;
+}
+
+div.reviews div.container div.review div.img img {
+    width: 80px;
+    border-radius: 10px;
+    border: 3px solid var(--dark);
+}
+
+div.reviews div.container div.review div.reviewDes {
+    padding: 0.75rem;
+}
+
+div.reviews div.container div.review div.reviewDes h4 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 0.5rem;
+}
+
+div.reviews div.container div.review div.reviewDes div.star {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    color: #CC7900;
+}
+
+div.reviews div.container div.review div.reviewDes div.star img {
+    width: 90px;
+}
+
+div.reviews div.container div.review div.reviewDes p {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+div.reviews div.container div.review div.reviewDes p img {
+    width: 39px;
+    padding-right: 10px;
+}
+
+div.reviews div.container div.review div.reviewDes div.bottom {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+div.reviews div.container div.review div.reviewDes div.bottom div.img {
+    padding: 0.75rem 0.75rem 0.75rem 0rem;
+}
+
+div.reviews div.container div.review div.reviewDes div.bottom div.img img {
+    width: 90px;
+    object-fit: cover;
+    border: none;
+}
+
+div.reviews div.container div.review div.reviewDes div.bottom div.column {
+    padding: 0.75rem 1.5rem;
+}
+
+div.reviews div.container div.review div.reviewDes div.bottom div.column p.name {
+    font-size: 1.25rem !important;
+    margin-bottom: 0.5rem;
+}
+
+div.reviews div.container div.review div.reviewDes div.bottom div.column p.package {
+    font-size: 1.25rem;
+    color: var(--dark);
+    font-weight: bold;
+}
+
+/* discounted */
+div.discounted {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--blu);
+    border-top: 4px solid #124776;
+
+}
+
+div.discounted h2 {
+    color: var(--light);
+    padding-top: 1rem;
+    font-size: 40px !important;
+    text-align: center;
+}
+
+div.clip {
+    background-color: #EEEEEE;
+    margin-top: -2px !important;
+
+}
+
+div.clippath {
+    position: relative;
+    clip-path: polygon(100% 0, 0 0, 50% 100%);
+    height: 45px;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    border-top: none !important;
+    background-color: var(--blu);
+}
+
+/* carts */
+div.carts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #EEEEEE;
+    padding: 12px;
+}
+
+div.carts div.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    gap: 20px;
+
+}
+
+div.carts div.container div.cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0.75rem;
+    transition: 0.3s all ease;
+}
+
+div.carts div.container .first,
+.third {
+    background-color: var(--light);
+    border-radius: 6px;
+    border: 3px solid #c1c4ca;
+    box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, .1), 0 0 0 1px rgba(10, 10, 10, .02);
+}
+
+div.carts div.container .second {
+    background-color: #FFFCC3;
+    border-radius: 6px;
+    border: 3px solid var(--dark);
+    box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, .1), 0 0 0 1px rgba(10, 10, 10, .02);
+}
+
+div.carts div.container div.cart h2 {
+    color: #404040;
+    font-size: 3rem;
+    letter-spacing: -.0625rem;
+}
+
+div.carts div.container div.cart h3 {
+    color: #404040;
+    font-size: 2rem;
+    letter-spacing: -.0625rem;
+}
+
+div.carts div.container div.cart img.main {
+    width: 285px;
+}
+
+div.carts div.container div.cart div.price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #404040;
+}
+
+div.carts div.container div.cart div.price span {
+    font-size: 5.5rem;
+    font-weight: 700;
+}
+
+div.carts div.container div.cart h5 {
+    font-size: 1.3rem;
+}
+
+div.carts div.container div.cart img.button {
+    width: 277px;
+}
+
+div.carts div.container div.cart img.card {
+    width: 222px;
+}
+
+div.carts div.container div.cart p {
+    font-size: 1.75rem;
+    color: #404040;
+}
+
+div.carts div.container div.cart p span {
+    text-decoration: line-through red;
+}
+
+div.carts div.container div.cart:hover {
+    transform: scale(1.05);
+}
+
+/* satis */
+div.satis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+div.satis div.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div.satis div.container h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--dark);
+    margin-bottom: 1.5rem;
+}
+
+div.satis div.container div.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.satis div.container div.row img {
+    width: 210px;
+    padding-right: 1.5rem;
+}
+
+div.satis div.container div.row p {
+    font-size: 1.5rem;
+}
+
+div.satis div.container img {
+    width: 700px;
+}
+
+/* faq */
+div.faq {
+    background: radial-gradient(circle, #2f9080 0, #227265 50%, #144e44 100%);
+    border-top: 4px solid #145146;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0rem;
+}
+
+div.faq div.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+div.faq div.container div.acc {
+    width: 100%;
+}
+
+div.faq div.container h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: var(--light);
+}
+
+.accordion {
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin-bottom: 10px;
+    display: block;
+    background: #fff;
+    color: #000;
+    border-radius: 0.15em;
+    padding: 8px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.active,
+.accordion:hover {
+    background-color: #e6feff;
+}
+
+.panel {
+    padding: 10px;
+    font-size: 24px;
+    line-height: 1.1;
+    background-color: rgba(255, 255, 255, 0);
+    display: none;
+    overflow: hidden;
+    color: var(--light);
+}
+
+/* reference */
+div.reference {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0rem;
+}
+
+div.reference div.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.reference div.container div.img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+div.reference div.container div.img img {
+    width: 246px;
+}
+
+div.reference div.container h3 {
+    font-size: 1.5rem;
+    color: #7a7a7a;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+}
+
+div.reference div.container li {
+    padding: 0rem 1rem;
+
+}
+
+div.reference div.container ol {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    text-align: left;
+    font-size: 12px;
+    color: #7a7a7a;
+}
+
+/* footer */
+div.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, #2f9080 0, #227265 50%, #144e44 100%);
+    padding: 3rem 0rem;
+}
+
+div.footer div.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div.footer div.container p {
+    color: #8ad7ca;
+    font-size: 1rem;
+}
+
+div.footer div.container div.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+div.footer div.container div.navigation a {
+    color: var(--light) !important;
+}
+
+@media screen and (max-width:950px) {
+    div.banner div.container div.right img {
+        width: 100%;
+        margin: 20px 0px;
+    }
+    div.created div.container h2{
+        margin: 20px 0px;
+    }
+    div.created div.container p{
+        font-size: 20px;
+    }
+
+    div.banner {
+        background: radial-gradient(circle, #2f9080 0, #227265 50%, #144e44 100%);
+        padding:  7rem 1.75rem 1.75rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    div.banner div.container div.right p.description {
+        font-size: 20px;
+        margin: 20px 0px;
+        color: var(--light);
+    }
+
+    div.bonus div.container div.twoContainer img {
+        width: 80%;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border: 10px solid var(--dark);
+    }
+
+    div.bonus div.container div.twoContainer .imgBox div.bottom {
+        background-color: var(--dark);
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        margin-top: -10px;
+        width: 80%;
+        font-size: 1.5rem !important;
+        text-align: center;
+    }
+
+    .imgDes {
+        width: 80%;
+    }
+
+    div.bonus div.container div.twoContainer div.imgDes p {
+        font-size: 20px;
+        font-weight: 400;
+        color: var(--light);
+        width: 80%;
+    }
+
+    div.bonus {
+        background: radial-gradient(circle, #2f9080 0, #227265 50%, #144e44 100%);
+        border-top: 4px solid var(--dark);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem 1rem;
+    }
+
+    div.carts div.container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+
+    div.reference div.container div.img img {
+        width: 25%;
+    }
+
+    div.footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: radial-gradient(circle, #2f9080 0, #227265 50%, #144e44 100%);
+        padding: 3rem 1rem;
+    }
+
+    div.faq {
+        background: radial-gradient(circle, #2f9080 0, #227265 50%, #144e44 100%);
+        border-top: 4px solid #145146;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem 1rem;
+    }
+
+    div.reviews {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem 1rem;
+    }
+
+    div.features div.container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        padding: 1.5rem 1rem;
+    }
+
+    div.scientific div.container {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        padding: 1.5rem 1rem;
+    }
+
+    div.shipping {
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem 1rem;
+    }
+
+    div.carts div.container div.cart {
+        width: 100%;
+    }
+
+    div.carts div.container a {
+        width: 100%;
+    }
+
+    div.carts div.container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        padding: 1rem;
+    }
+
+    div.banner div.container div.right {
+        width: 100%;
+    }
+
+    div.banner div.container div.left {
+        width: 100%;
+    }
+    div.bonus div.container div.twoContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+    }
+    
+}
+
+@media screen and (max-width:786px) {
+    div.banner div.container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    div.scientific div.container {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        padding: 1.5rem 1rem;
+        flex-direction: column;
+    }
+
+    div.scientific div.container div.right {
+        width: 33.33%;
+        background: url(images/b1.jpg);
+        background-size: cover;
+        border-radius: 8px;
+        margin-left: 0px;
+        min-height: 400px;
+        width: 100%;
+    }
+
+    div.scientific div.container div.left {
+        width: 100%;
+        padding: 0.75rem;
+    }
+
+    div.created div.container div.innerContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    div.created div.container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        padding: 1.5rem 1rem 3rem 1rem;
+    }
+
+    div.bonus div.container div.twoContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+        gap:20px;
+        
+    }
+
+    div.bonus div.container div.twoContainer img {
+        width: 100%;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border: 10px solid var(--dark);
+    }
+
+    div.bonus div.container div.twoContainer .imgBox div.bottom {
+        background-color: var(--dark);
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        margin-top: -10px;
+        width: 100%;
+        font-size: 1.5rem !important;
+        text-align: center;
+    }
+
+    .imgDes {
+        width: 100%;
+    }
+
+    div.bonus div.container div.twoContainer div.imgDes p {
+        font-size: 20px;
+        font-weight: 400;
+        color: var(--light);
+        width: 100%;
+    }
+
+    div.shipping div.container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    div.reviews div.container div.review div.reviewDes {
+        padding: 0.75rem;
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (max-width:500px) {
+    div.banner div.container div.left img {
+        width: 100%;
+    }
+    div.banner div.container div.right h2 {
+        font-size: 34px;
+        font-weight: 600;
+        color: var(--light);
+    }
+    div.scientific div.container div.left h3 {
+        font-size: 32px;
+        color: var(--text);
+        font-weight: 600;
+    }
+    div.created div.container h2 {
+        font-size: 32px;
+        font-weight: 700;
+        color: var(--light);
+    }
+    div.capsule div.container h2{
+        font-size: 26px;
+    }
+    div.capsule div.container p{
+        font-size: 18px;
+    }
+    div.created div.container img {
+        width: 100%;
+    }
+    div.created div.container div.innerContainer div.left img {
+        width: 100%;
+    }
+    div.capsule div.container div.threeContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    div.capsule div.container div.towContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 99%;
+    }
+    div.features div.container div.row {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    div.features div.container div.row div.feature {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 19px;
+        width: 50%;
+    }
+    div.users div.container div.images {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    div.users div.container div.images img.img1{
+        display: none;
+    }
+    div.features div.container div.row img{
+        width: 38.8px;
+    }
+    div.bonus div.container h2{
+        font-size: 30px;
+    }
+    div.users div.container h2{
+        font-size: 30px;
+    }
+    div.users{
+        padding: 2rem;
+    }
+    div.reviews div.container div.review div.reviewDes h4{
+        font-size: 24px;
+    }
+    div.faq div.container h2{
+        font-size: 30px;
+    }
+    .accordion {
+        font-size: 18px;
+    }
+    .panel {
+        font-size: 20px;
+    }
+    div.discounted h2{
+        font-size: 26px!important;
+    }
+    div.satis div.container h2{
+        font-size: 30px;
+    }
+    div.shipping div.container div.desc h2 {
+        font-size: 2.4rem;
+        color: var(--light);
+        margin-bottom: 0.5rem;
+        text-align: center;
+        font-weight: 700;
+    }
+    div.shipping div.container div.desc p {
+        font-size: 1.6rem;
+        color: var(--light);
+        text-align: center;
+    }
+    div.reviews div.container div.review div.img img {
+        width: 50px;
+        border-radius: 10px;
+        border: 3px solid var(--dark);
+    }
+    div.reviews div.container div.review div.reviewDes div.bottom div.img img {
+        width: 50px;
+        object-fit: cover;
+        border: none;
+    }
+    div.reviews div.container div.review div.reviewDes div.bottom div.column {
+        padding: 0.75rem 1rem;
+        margin-left: 1rem;
+    }
+    div.satis div.container div.row {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    div.satis div.container div.row p {
+        font-size: 20px;
+        margin: 20px 0px;
+        text-align: center;
+    }
+    div.satis div.container img {
+        width: 100%;
+    }
+    div.satis div.container div.row img {
+        width: 210px;
+        padding-right: 0;
+    }
+    div.reference div.container ol {
+        columns: 1;
+        -webkit-columns: 1;
+        -moz-columns: 2;
+        text-align: left;
+        font-size: 12px;
+        color: #7a7a7a;
+        padding: 1.75rem;
+    }
+    div.footer div.container p {
+        color: #8ad7ca;
+        font-size: 1rem;
+        text-align: center;
+    }
+    header div.container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    header {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--dark);
+        padding: 10px;
+        position: fixed;
+        z-index: 9999;
+    }
+    
+    div.scientific div.container p.ref {
+        color: #7a7a7a;
+        padding: 1.5rem 0.75rem;
+        width: 100%;
+        font-size: 12px;
+    }
+    div.show{
+        display: none;
+        position: absolute;
+    top: 70px;
+    width: 100%;
+    }
+    header .nav{
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    background: white;
+    color: black;
+    }
+    header div.container div.nav a{
+        color: var(--text);
+    }
+    header .logo{
+        width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    }
+    img.hamBur{
+        display: block;
+        width: 35px!important;
+    }
+    
+    .mobimg img{
+        display: block;
+        width: 100%;
+    }
+    div.footer div.container div.navigation{
+        display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 1.5rem;
+    flex-direction: column;
+    }
+}
